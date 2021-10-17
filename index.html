@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ratul -Responsive Personal Website</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+
+</head>
+<body>
+    
+
+    <!-- for menu active -->
+    <script  src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+    <script type="text/javascript">
+        $(document).on('click', '.menu ul li', function(){
+            $(this).addClass('active').siblings().removeClass('active')
+        })
+    </script>
+
+
+    <!-- for header annimation -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function(){
+            $(window).on('scroll', function(){
+                if ($(window).scrollTop()){
+                    $('nav').addClass('bgc');
+                }else{
+                    $('nav').removeClass('bgc');
+                }
+            });
+        });
+    </script>
+
+
+
+    <header id="home">
+        
+        <div class="fixed-width">
+            <nav class="clearfix">
+                <div class="logo left">
+                    <h2 ><a href="#home"><span class="pirana-p">R</span>atul</a></h2>
+                </div>
+                <div class="menu right">
+                    <input class="mobile-menu-check" type="checkbox">
+                    <span class="mobile-menu-icon"><i class="fas fa-bars"></i></span>
+                    <ul>
+                        <li class="active"><a href="#home">HOME</a></li>
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#services">SERVICES</a></li>
+                        <li><a href="#protfolio">PROTFOLIO</a></li>
+                        <li><a href="#testimonial">TESTIMONIAL</a></li>
+                        <li><a href="#blog">BLOG</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                    </ul>
+                </div>    
+            </nav>
+            <div class="text-wrapper">
+                <h1>Hi I'm <span>Ratul Hasan</span> Ovey</h1>
+                <h4>Professional <span>UI/UX Developer</span></h4>
+                <button class="contact-me"><a href="#"><i class="far fa-envelope"></i>Contact Me</a></button>
+            </div>
+        </div>
+    </header>
+
+    <div class="about clearfix" id="about">
+        <div class="fixed-width">
+            <div class="about-left left">
+                <img src="./img/ratul.jpg" alt="">
+            </div>
+            <div class="about-right right">
+                <h1>Hello I'm <span>Ratul Hasan Ovey</span></h1>
+                <h6>Senior UI Developer</h6>
+                <p>I'm Ratul Hasan. Creative Web Designer And Developer With More Than 5 Years Experience. I Design Your Website. whereas multidisciplinary intellectual capital. Distinctively synergize market-driven master and prospective channels. Dramatically drive an expanded array of expertise with modern technology. Completely cultivate standardized manufactured. Continue transform process centric systems rather than compelling growth strategies. Energistically streamline low-risk high-yield supply chains via scalable intellectual capital.</p>
+
+                <div class="about-me clearfix">
+                    <div class="a-text-left left">
+                        <h5 class="first-h5"><span>Age</span>18</h5>
+                    </div>
+                    <div class="a-text-right right">
+                        <h5><span>Phone</span>01777826136</h5>
+                    </div>
+                    <div class="a-text-left left">
+                        <h5><span>Address</span>22 Place, </h5>
+                    </div>
+                    <div class="a-text-right right">
+                        <h5><span>Website</span>www.mywebsite.com</h5>
+                    </div>
+                    <div class="a-text-left left">
+                        <h5><span>Email</span>ratulhassan934@gmail.com</h5>
+                    </div>
+                    <div class="a-text-right right">
+                        <h5><span>Country</span>Bangladesh</h5>
+                    </div>
+                </div>
+
+                <div class="social-menu">
+                    <ul>
+                        <a href="#">Social Links</a>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                        <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                        <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                        <button><a href="#"><i class="fas fa-download"></i>Download CV</a></button>
+                    </ul>
+                </div>
+
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="services" id="services">
+        <div class="fixed-width">
+            <div class="defult-text">
+                <h1><span>What</span>I do</h1>
+                <p>I design and develop services for customers of all sizes.</p>
+            </div>
+            <div class="card clearfix">
+                <div class="card-text text-center left">
+                    <div class="c-text">
+                        <h2>Web Development</h2>
+                        <span><i class="fas fa-code"></i></span>
+                    </div>
+                    <div class="hover-inner">
+                        <span><i class="far fa-code"></i></span>
+                        <h2>Web Development</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+                </div>
+                <div class="card-text text-center left">
+                    <div class="c-text">
+                        <h2>Mobile apps</h2>
+                        <span><i class="fas fa-mobile-alt"></i></span>
+                    </div>
+                    <div class="hover-inner">
+                        <span><i class="fas fa-mobile-alt"></i></span>
+                        <h2>Mobile apps</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+                </div>
+                <div class="card-text text-center left">
+                    <div class="c-text">
+                        <h2>Ecommerce Development</h2>
+                        <span><i class="fas fa-shopping-cart"></i></span>
+                    </div>
+                    <div class="hover-inner">
+                        <span><i class="fas fa-shopping-cart"></i></span>
+                        <h2>Ecommerce Development</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+                </div>
+                <div class="card-text text-center last-child left">
+                    <div class="c-text">
+                        <h2>Technical support</h2>
+                        <span><i class="fab fa-watchman-monitoring"></i></span>
+                    </div>
+                    <div class="hover-inner">
+                        <span><i class="fab fa-watchman-monitoring"></i></span>
+                        <h2>Technical support</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="protfolio" id="protfolio">
+        <div class="fixed-width">
+            <div class="defult-text">
+                <h1> My<span>Awesome</span>Photo</h1>
+                <p>I design and develop services for customers of all sizes.</p>
+            </div>
+            <div class="defult-text work-category">
+                <h4><span>Karim</span><span>Tempor</span><span>Rahat</span><span>Ratul</span></h4>
+            </div>
+            <div class="protfolio-img clearfix">
+                <div class="p-img left">
+                    <img src="./img/ratul1.jpg" alt="">
+                    <div class="img-innerdiv"></div>
+                </div>
+                <div class="p-img left">
+                    <div class="img">
+                        <img src="./img/ratul2.jpg" alt="">
+                        <div class="img-innerdiv"></div>
+                    </div>
+                </div>
+                <div class="p-img left">
+                    <img src="./img/ratul3.jpg" alt="">
+                    <div class="img-innerdiv"></div>
+                </div>
+                <div class="p-img left">
+                    <img src="./img/ratul4.jpg" alt="">
+                    <div class="img-innerdiv"></div>
+                </div>
+                <div class="p-img left">
+                    <img src="./img/ratul5.jpg" alt="">
+                    <div class="img-innerdiv"></div>
+                </div>
+                <div class="p-img left">
+                    <img src="./img/ratul6.jpg" alt="">
+                    <div class="img-innerdiv"></div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="testimonial">
+        <div class="fixed-width">
+            <div class="testimonial-item">
+                <div class="defult-text">
+                    <h1><span>My</span>Client</h1>
+                    <p>It is a long established fact that a reader will be of a page when established .</p>
+                </div>
+
+                <div class="container">
+                    <div class="indicator">
+                        <div class="btn activee"></div>
+                        <div class="btn"></div>
+                        <div class="btn"></div>
+                    </div>
+                    <div class="slide-item">
+                        <div class="slide-row" id="slide">
+                            <div class="slid-col">
+                                <div class="user-img">
+                                    <img src="./img/alom.jpg" alt="">
+                                </div>
+                                <div class="user-text">
+                                    <p>"The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using'Content here."</p>
+                                    <h5>- Ebony verty, Envato</h5>
+                                </div>
+                            </div>
+                            <div class="slid-col">
+                                <div class="user-img">
+                                    <img src="./img/mostakim.jpg" alt="">
+                                </div>
+                                <div class="user-text">
+                                    <p>"The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using'Content here."</p>
+                                    <h5>- Ebony verty, Envato</h5>
+                                </div>
+                            </div>
+                            <div class="slid-col">
+                                <div class="user-img">
+                                    <img src="./img/testi-3.jpg" alt="">
+                                </div>
+                                <div class="user-text">
+                                    <p>"The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using'Content here."</p>
+                                    <h5>- Ebony verty, Envato</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <script>
+                    var btn = document.getElementsByClassName("btn");
+                    var slide = document.getElementById("slide");
+
+                    btn[0].onclick = function(){
+                        slide.style.transform = "translatex(0px)";
+                        for(i=0;i<3;i++){
+                            btn[i].classList.remove("activee");
+                        }
+                        this.classList.add("activee");
+                    }
+                    btn[1].onclick = function(){
+                        slide.style.transform = "translatex(-1310px)";
+                        for(i=0;i<3;i++){
+                            btn[i].classList.remove("activee");
+                        }
+                        this.classList.add("activee");
+                    }
+                    btn[2].onclick = function(){
+                        slide.style.transform = "translatex(-2620px)";
+                        for(i=0;i<3;i++){
+                            btn[i].classList.remove("activee");
+                        }
+                        this.classList.add("activee");
+                    }
+                </script>
+                
+            </div>
+        </div>
+        
+        <div class="hire">
+            <div class="hire-item">
+                <p>I'm avaiable for freelance hire</p>
+                <h1> Let's <span>work</span> Together </h1>
+                <a href="#">hire me</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="latest-news">
+        <div class="fixed-width">
+            <div class="latest-news-item">
+                <div class="defult-text">
+                    <h1><span>Latest</span>News</h1>
+                    <p>It is a long established fact that a reader will be of a page when established .</p>
+                </div>
+                <div class="news-content clearfix">
+                    <div class="news-item left">
+                        <div class="news-img">
+                            <img src="./img/post01.jpg" alt="">
+                        </div>
+                        <div class="news-text-box">
+                            <div class="news-comment-section">
+                                <span>
+                                    <i class="fas fa-comment-dots"></i>
+                                    <a href="#">4</a>
+                                </span>
+                                <span>
+                                    <i class="fas fa-user"></i>
+                                    <a href="#">John Doe</a>
+                                </span>
+                                <span>
+                                    <i class="fas fa-tag"></i>
+                                    <a href="#">Webdevelopment</a>
+                                </span>
+                            </div>
+                            <div class="news-later-text">
+                                <h3>31 Aug. 2021</h3>
+                                <h1>Awesome Seattle Cycle Trip</h1>
+                                <p>Per ea tibique fabellas electram. Ea aliquam corpora vis. Ne quot civibus atomorum quo. </p>
+                                <a href="#">read more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-item left">
+                        <div class="news-img">
+                            <img src="./img/post02.jpg" alt="">
+                        </div>
+                        <div class="news-text-box">
+                            <div class="news-comment-section">
+                                <span>
+                                    <i class="fas fa-comment-dots"></i>
+                                    <a href="#">4</a>
+                                </span>
+                                <span>
+                                    <i class="fas fa-user"></i>
+                                    <a href="#">John Doe</a>
+                                </span>
+                                <span>
+                                    <i class="fas fa-tag"></i>
+                                    <a href="#">Webdevelopment</a>
+                                </span>
+                            </div>
+                            <div class="news-later-text">
+                                <h3>1 Sep. 2021</h3>
+                                <h1>Awesome Seattle Cycle Trip</h1>
+                                <p>Per ea tibique fabellas electram. Ea aliquam corpora vis. Ne quot civibus atomorum quo. </p>
+                                <a href="#">read more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-item left">
+                        <div class="news-img">
+                            <img src="./img/post03.jpg" alt="">
+                        </div>
+                        <div class="news-text-box">
+                            <div class="news-comment-section">
+                                <span>
+                                    <i class="fas fa-comment-dots"></i>
+                                    <a href="#">4</a>
+                                </span>
+                                <span>
+                                    <i class="fas fa-user"></i>
+                                    <a href="#">John Doe</a>
+                                </span>
+                                <span>
+                                    <i class="fas fa-tag"></i>
+                                    <a href="#">Webdevelopment</a>
+                                </span>
+                            </div>
+                            <div class="news-later-text">
+                                <h3>7 Sep. 2021</h3>
+                                <h1>Awesome Seattle Cycle Trip</h1>
+                                <p>Per ea tibique fabellas electram. Ea aliquam corpora vis. Ne quot civibus atomorum quo. </p>
+                                <a href="#">read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="contact clearfix">
+        <div class="fixed-width">
+            <div class="form left">
+                <form action="#">
+                    <h1><Span>Get</Span> in touch</h1>
+                    <div class="devider-input clearfix">
+                        <div class="name-input left">
+                            <input class="w-50" type="text" placeholder="Name">
+                        </div>
+                        <div class="email-input right">
+                            <input class="w-50" type="email" placeholder="Email">
+                        </div>
+                    </div>
+                    <input class="w-100" type="text" placeholder="Message">
+                    <button type="submit"><span><i class="fas fa-paper-plane"></i></span>Send Message</button>
+                </form>
+            </div>
+            <div class="contact-info left">
+                <div class="email-info">
+                    <span class="e-icon"><i class="fas fa-envelope"></i></span>
+                    <strong><span>Email:</span>raharhassan934@gmail.com</strong>
+                </div>
+                <div class="location-info">
+                    <span class="l-icon"><i class="fas fa-map-marker-alt"></i></span>
+                    <strong><span>Location:</span>Babur Hat, Narsingdi</strong>
+                </div>
+            </div>
+            <div class="contact-info left">
+                <div class="email-info">
+                    <span class="e-icon"><i class="fas fa-phone-alt"></i></span>
+                    <strong><span>Phone:</span>01777826136</strong>
+                </div>
+                <div class="location-info">
+                    <span class="l-icon"><i class="fas fa-map-marker-alt"></i></span>
+                    <strong><span>Location:</span>Babur Hat, Narsingdi</strong>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer clearfix">
+        <div class="fixed-width">
+            <div class="footer-text left">
+                <p class="footer-text-p">Copyrights © <span>pirana</span> 2021 made by <span>Rahat Hassan</span></p>
+            </div>
+            <div class="footer-menu footer-text left">
+                <span><i class="fab fa-facebook-f"></i></span>
+                <span><i class="fab fa-twitter"></i></span>
+                <span><i class="fab fa-linkedin-in"></i></span>
+                <span><i class="fab fa-youtube"></i></span>
+            </div>
+            <div class="footer-privacy footer-text left">
+                <p>Privacy Policy</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
